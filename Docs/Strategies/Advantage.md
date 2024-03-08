@@ -10,7 +10,7 @@ These questions lead me to quickly draw out the game field for a birds eye view 
 
 Here is the top down view of the field with the pre-determined path:
 
-<img src="./Images/IEEEField.JPG" alt="drawing" width="500" style="border-radius: 25px"/>
+<img src="../../Images/IEEEField.JPG" alt="drawing" width="500" style="border-radius: 25px"/>
 
 
 I know it may be alot to look at, but looking closley are you able to spot the unfair advantage?
@@ -19,7 +19,7 @@ I know it may be alot to look at, but looking closley are you able to spot the u
 
 Heres an uncluttered view
 
-<img src="./Images/GtoEvsAtoD.JPG" alt="drawing" width="500" style="border-radius: 25px"/>
+<img src="../../Images/GtoEvsAtoD.JPG" alt="drawing" width="500" style="border-radius: 25px"/>
 
 
 Doing a bit of simple math we can find figure out the travel distance of each segment.
@@ -28,7 +28,7 @@ Doing a bit of simple math we can find figure out the travel distance of each se
 >
 >A->D => √6²+6² ≈ 8.48ft
 
-<img src="./Images/Diagnals.JPG" alt="drawing" width="500" style="border-radius: 25px"/>
+<img src="../../Images/Diagnals.JPG" alt="drawing" width="500" style="border-radius: 25px"/>
 
 
 There is a clear advantage with starting positions G->E over A->D
@@ -40,11 +40,11 @@ Check out Starting position F->B
 
 >F->B => √4²+8² ≈ 8.94ft
 
-<img src="./Images/FtoB.JPG" alt="drawing" style="border-radius: 25px" width="500"/>
+<img src="../../Images/FtoB.JPG" alt="drawing" style="border-radius: 25px" width="500"/>
 
 Here is a Tier List based on the initial travel distance of each Starting position
 
-<img src="./Images/DistancTierList.JPG" style="border-radius: 25px" alt="drawing" width="800"/>
+<img src="../../Images/DistancTierList.JPG" style="border-radius: 25px" alt="drawing" width="800"/>
 
 As you can see, if we are only allowed to charge at each station for maximum of 10 seconds, those who start at stations <strong>H, G, C, E</strong> have a clear advantage. 
 
