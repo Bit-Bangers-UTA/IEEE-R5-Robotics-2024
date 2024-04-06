@@ -105,6 +105,7 @@ void wallDetection(float nextX, float nextY)
     //   {
     while(optDistance < 15)// turn until we face a direction with no obstacles
     {
+        Serial.printf("wallDetection => optDistance < 15 : %f\n", optDistance);
         turn(CLOCKWISE, 65);
         delay(500);
         optDistance = getWhiskerDistanceCm();// update distance
@@ -115,7 +116,7 @@ void wallDetection(float nextX, float nextY)
       move(FORWARD, 255);
       delay(500);
       stopMotors();
-    //   goToCoordinates(COORDINATES); no garbage collector, stack gets full
+    //   goToCoordinates(COORDINATES); no garbage collector, stack gets full, void returns to parent function
     }
   }
   else

@@ -96,7 +96,7 @@ float getHeading()
   {
     retVal = calculateHeading(sensorValue.un.arvrStabilizedRV.i, sensorValue.un.arvrStabilizedRV.j, sensorValue.un.arvrStabilizedRV.k, sensorValue.un.arvrStabilizedRV.real);
 
-    Serial.println(retVal);
+    // Serial.println(retVal);
 
     retVal -= offsetForImu;
     if (retVal < 0)
@@ -107,8 +107,8 @@ float getHeading()
   if (retVal == -1)
   {
     // ESP.restart();
-    Serial.println();
-    Serial.println("ret val is -1!");
+    // Serial.println();
+    // Serial.println("ret val is -1!");
     /*
     bno08x.hardwareReset();
     if (bno08x.wasReset())

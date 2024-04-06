@@ -134,17 +134,17 @@ void printCurrentAngle()
 
 void printCurrentPos()
 {
-  Serial.println("Position in CM:");
-  Serial.print("X: ");
-  Serial.print(X_POS);
-  Serial.print("\tY: ");
-  Serial.println(Y_POS);
+  // Serial.println("Position in CM:");
+  // Serial.print("X: ");
+  // Serial.print(X_POS);
+  // Serial.print("\tY: ");
+  // Serial.println(Y_POS);
 
-  Serial.println("Position in feet:");
-  Serial.print("X: ");
-  Serial.print(X_POS / 30.48); // Convert X_POS from cm to feet
-  Serial.print("\tY: ");
-  Serial.println(Y_POS / 30.48); // Convert Y_POS from cm to feet
+  // Serial.println("Position in feet:");
+  // Serial.print("X: ");
+  // Serial.print(X_POS / 30.48); // Convert X_POS from cm to feet
+  // Serial.print("\tY: ");
+  // Serial.println(Y_POS / 30.48); // Convert Y_POS from cm to feet
 }
 // Function to find the cardinal heading based on the current angle
 int16_t findCardinalheading()
@@ -261,7 +261,7 @@ float getNextAngle(float currentX, float currentY, float goalX, float goalY)
     angle = atan(diff_Y / diff_X);
     // atan2()
     angle *= 180.0f / M_PI;
-    Serial.printf("Raw Angle degrees: %f\n", angle);
+    // Serial.printf("Raw Angle degrees: %f\n", angle);
 
     if (diff_X > 0 && diff_Y > 0) // x+ y+
     {
@@ -505,7 +505,7 @@ void goToCoordinates(float nextX, float nextY)
   while (goToCoordinates)
   {
 
-    wallDetection(nextX, nextY);
+    wallDetection(nextX, nextY); // have do X_POS and Y_POS update in wallDetection automatically? Or must we return COORDINATE strcut and update manually?
 
     jiggle();
      

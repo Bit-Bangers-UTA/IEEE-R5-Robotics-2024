@@ -73,7 +73,7 @@ float offset = 0;
 //   }
 //   return currentAngle;
 // }
-// void printCurrentAngle(sh2_SensorValue_t sensorValue)
+void printCurrentAngle(sh2_SensorValue_t sensorValue)
 // {
 //   float currentAngle = getCurrentAngle(sensorValue);
 //   printToLcd("Current Angle: ", currentAngle);
@@ -130,7 +130,7 @@ float offset = 0;
 //     i++;
 //     if (i >= 30)
 //     {
-//       printCurrentAngle(sensorValue);
+      printCurrentAngle(sensorValue);
 //       i = 0;
 //     }
 
@@ -152,39 +152,39 @@ float offset = 0;
 void testTurns(sh2_SensorValue_t sensorValue)
 {
   turnToHeading(sensorValue, 90, 85);
-  printCurrentAngle(sensorValue);
+  // printCurrentAngle(sensorValue);
   delay(1000);
 
   turnToHeading(sensorValue, 0, 85);
-  printCurrentAngle(sensorValue);
+  // printCurrentAngle(sensorValue);
   delay(1000);
 
   turnToHeading(sensorValue, 180, 85);
-  printCurrentAngle(sensorValue);
+  // printCurrentAngle(sensorValue);
   delay(1000);
 
   turnToHeading(sensorValue, 0, 85);
-  printCurrentAngle(sensorValue);
+  // printCurrentAngle(sensorValue);
   delay(1000);
 
   turnToHeading(sensorValue, 270, 85);
-  printCurrentAngle(sensorValue);
+  // printCurrentAngle(sensorValue);
   delay(1000);
 
   turnToHeading(sensorValue, 45, 85);
-  printCurrentAngle(sensorValue);
+  // printCurrentAngle(sensorValue);
   delay(1000);
 
   turnToHeading(sensorValue, 225, 85);
-  printCurrentAngle(sensorValue);
+  // printCurrentAngle(sensorValue);
   delay(1000);
 
   turnToHeading(sensorValue, 135, 85);
-  printCurrentAngle(sensorValue);
+  // printCurrentAngle(sensorValue);
   delay(1000);
 
   turnToHeading(sensorValue, 315, 85);
-  printCurrentAngle(sensorValue);
+  // printCurrentAngle(sensorValue);
   delay(1000);
 }
 
@@ -224,7 +224,7 @@ void setup()
 
   printToLcd("OFFSET:", offset);
   delay(1000);
-  printCurrentAngle(imuValue);
+  // printCurrentAngle(imuValue);
   delay(1000);
 }
 
@@ -383,7 +383,7 @@ void loop()
     i++;
     if (i >= 15)
     {
-      printCurrentAngle(imuValue);
+      // printCurrentAngle(imuValue);
       i = 0;
     }
     delay(10);
