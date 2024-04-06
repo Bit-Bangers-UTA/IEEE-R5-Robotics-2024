@@ -57,25 +57,25 @@ float getVL53L1XDistanceCm()
 /*
 This function is for debugging purposes only. It will print out the distance
 */
-void wallDetection()
-{
-  float distance = getWhiskerDistanceCm();
-  if(distance < 20)
-  {
-    if(getVL53L1XDistanceCm() < 25)
-    {
-      Serial.println("Wall detected");
-    }
-    else
-    {
-      Serial.println("Object detected");
-    }
-  }
-  else
-  {
-    Serial.println("No wall or object detected");
-  }
-}
+// void wallDetection()
+// {
+//   float distance = getWhiskerDistanceCm();
+//   if(distance < 20)
+//   {
+//     if(getVL53L1XDistanceCm() < 25)
+//     {
+//       Serial.println("Wall detected");
+//     }
+//     else
+//     {
+//       Serial.println("Object detected");
+//     }
+//   }
+//   else
+//   {
+//     Serial.println("No wall or object detected");
+//   }
+// }
 
 extern float X_POS;
 extern float Y_POS ;
@@ -94,6 +94,7 @@ extern float Y_POS ;
 */
 void wallDetection(float nextX, float nextY)
 {
+  Serial.println("wallDetection()");
   float optDistance; // in cm
   if(X_POS < 60.48 && Y_POS < 60.48)// if x and y are less than 2ft
   {

@@ -11,7 +11,7 @@ void fillFirstBuffer();
 
 float getVL53L1XDistanceCm();
 
-void wallDetection();
+// void wallDetection();
 
 
 
